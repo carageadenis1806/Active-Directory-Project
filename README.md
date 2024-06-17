@@ -38,7 +38,7 @@ This project's main objective is to simulate scenarios from a defender's POV, an
 ![image](https://github.com/carageadenis1806/Active-Directory-Project/assets/75758209/0702aa10-c380-43d1-a1e0-b266ad1ba301)
 (2)
 
-*Ref 2: Creted two new organizational units (HR & IT) and added one user to each org unit (Andreea Savu, Mihai Popescu).*
+*Ref 2: Created two new organizational units (HR & IT) and added one user to each org unit (Andreea Savu, Mihai Popescu).*
 
 
 ![image](https://github.com/carageadenis1806/Active-Directory-Project/assets/75758209/61697a93-2a4e-4cfc-aea6-047a444b25e5)
@@ -46,6 +46,29 @@ This project's main objective is to simulate scenarios from a defender's POV, an
 
 *Ref 3: Added the AD domain to the target machine, then logged in succesfully to one of the accounts created.*
 
+
+## STEP 5 - Perform a Brute Force Attack using Kali and investigate the telemetry via Splunk
+
+![image](https://github.com/carageadenis1806/Active-Directory-Project/assets/75758209/e6733467-c9fe-4115-a439-d859c5e7e4b5)
+(1)
+
+*Ref 1: The tool crowbar provided a wordlists of passwords, then I added the AD user password to it in order to exploit it.*
+![image](https://github.com/carageadenis1806/Active-Directory-Project/assets/75758209/6d7b6b2b-200a-4b1e-aa57-4cd5b4f48850)
+(2)
+
+*Ref 2: Also with the tool crowbar I managed to launch a brute force attack on AD user 'sandreea', using RDP protocol.*
+
+## STEP 6 - Investigating the telemetry with Splunk
+![image](https://github.com/carageadenis1806/Active-Directory-Project/assets/75758209/9f5c9de7-0bb6-49c5-a764-ff676d3abeec)
+(1)
+
+*Ref 1: After filtering the search to only show data from user 'sandreea', we can see under Event ID, that the event id 6425 had a count of 80. Event 6425 refers to 'An account failed to log on'. Which means that the Brute Force attack tried 80 times before getting access.*
+
+![image](https://github.com/carageadenis1806/Active-Directory-Project/assets/75758209/4385f365-19a2-4dc0-85e1-932241200cba)
+(2)
+
+
+*Ref 2: After further filtering the search by adding EventID=6425, we can investigate an entry and see that the attempt was from the Kali machine.*
 
 
 
