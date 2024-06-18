@@ -3,10 +3,16 @@
 
 This project's main objective is to simulate scenarios from a defender's POV, and also from an attacker's POV. The scenarios involve attacking an Active Directory server using a Kali machine, but also analyzing ingested data from the target machine with Splunk.
 ### Skills Learned
-
+- NAT network VM configuration
+- AD server configuration
+- Generate telemetry with Crowbar's brute force attack
+- Investigate and analyze telemetry using Splunk
 
 ### Tools Used
-
+- Splunk
+- Sysmon
+- Crowbar
+- Virtual Box
 
 ## Steps
 
