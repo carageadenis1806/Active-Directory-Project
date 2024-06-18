@@ -18,7 +18,7 @@ This project's main objective is to simulate scenarios from a defender's POV, an
 
 
 ## STEP 1 - Creating the network diagram of the project.
-<img width="699" alt="image" src="https://github.com/carageadenis1806/Active-Directory-Project/assets/75758209/7506b5cd-9ae9-46b6-bbf4-3ea249ce8708">
+<img width="943" alt="image" src="https://github.com/carageadenis1806/Active-Directory-Project/assets/75758209/90b39e91-026e-49e2-b337-96896419d675">
 
 ## STEP 2 - Installing Virtual Machines
 - Windows 10 (Target machine)
